@@ -1,4 +1,4 @@
-export async function callApi(method: string, url: string, path: string, data?: any) {
+export  async function callApi(method: string, url: string, path: string, data?: any) {
     const res = await fetch(url + '/api' + path, {
       method,
       headers: {

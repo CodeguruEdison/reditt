@@ -6,3 +6,9 @@ export const enum LayoutActionTypes {
 export interface LayoutState {
     readonly theme:ThemeColors
 }
+
+export interface SetThemeAction {
+    type:  LayoutActionTypes.SET_THEME,
+    payload?:ThemeColors
+}
+//export type LayoutActionsType = SetThemeAction;
